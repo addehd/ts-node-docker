@@ -5,7 +5,7 @@ const app = express()
 
 app.get('/', (req: Request, res: Response) => {
   logger.info('Handling request for /')
-  res.send('Hello, World!!!')
+  res.send('Hello, World!')
 })
 
 app.listen(3000, () => {
