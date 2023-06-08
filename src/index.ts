@@ -5,9 +5,9 @@ const app = express()
 
 app.get('/', (req: Request, res: Response) => {
   logger.info('Handling request for /')
-  res.send('Hello World!')
+  res.send('Hello, World!!!')
 })
 
-app.listen(3011, () => {
-  logger.info('App is listening on port 3011')
+app.listen(3000, () => {
+  logger.info('App is listening on port 3000')
 })
