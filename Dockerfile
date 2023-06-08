@@ -1,5 +1,5 @@
 # Use the node:16-slim base image
-FROM node:16-slim AS build
+FROM node:20-alpine AS build
 
 # Set the working directory
 WORKDIR /usr/src/app
@@ -20,7 +20,7 @@ COPY . .
 RUN pnpm run build
 
 # Start a new stage for the runtime
-FROM node:16-slim 
+FROM node:20-alpine 
 
 # Set the working directory
 WORKDIR /usr/src/app
